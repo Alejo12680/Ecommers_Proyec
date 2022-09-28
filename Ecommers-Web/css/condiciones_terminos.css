@@ -1,0 +1,74 @@
+:root {
+    --color-nav-blue: #3b8bb9;
+    --color-general-black: #0b0d17;
+    --color-general-white: #ffffff;
+    --color-contraste-yellow: #f5b434;
+    --color-background-form: #d9d4ca;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    background-color: var(--color-background-form);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main_docment {
+    background-color: var(--color-general-white);
+    box-shadow: 5px 5px 10px; /* ligeramente a la derecha y abajo Sombra desenfocada */ 
+    width: 60%;
+    height: 71rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    overflow: auto;
+    overflow: overlay;
+    margin-top: 2rem;
+}
+
+/* Scroll */
+
+main .main_docment::-webkit-scrollbar {
+    display: none;
+    background-color: transparent;
+    width: 1.4rem;
+}
+
+main .main_docment:hover::-webkit-scrollbar {
+    display: initial;
+}
+
+main .main_docment::-webkit-scrollbar-thumb {
+    background-color: rgb(154, 154, 154);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+/* Document */
+
+main .main_docment li {
+    font-size: 1.6rem;
+    font-weight: 550;
+    margin: 1rem;
+}
+
+main .main_docment h1 {
+    font-size: 2.3rem;
+    font-weight: 550;
+    margin: 1rem;
+}
+
+main .main_docment p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: justify;
+}

@@ -1,0 +1,135 @@
+:root {
+    --color-nav-blue: #3b8bb9;
+    --color-main-ble: #98badf;
+    --color-general-black: #0b0d17;
+    --color-general-white: #ffffff;
+    --color-contraste-yellow: #f5b434;
+    --color-background-form: #d9d4ca;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    background-color: var(--color-main-ble);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main_docment {
+    background-color: var(--color-general-white);
+    box-shadow: 5px 5px 10px; /* ligeramente a la derecha y abajo Sombra desenfocada */ 
+    width: 70%;
+    height: 71rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    overflow: auto;
+    overflow: overlay;
+    margin-top: 2rem;
+}
+
+/* Scroll */
+
+main .main_docment::-webkit-scrollbar {
+    display: none;
+    background-color: transparent;
+    width: 1.4rem;
+}
+
+main .main_docment:hover::-webkit-scrollbar {
+    display: initial;
+}
+
+main .main_docment::-webkit-scrollbar-thumb {
+    background-color: rgb(154, 154, 154);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+/* Document */
+
+main .main_docment h1 {
+    font-size: 2.5rem;
+    font-weight: 550;
+    margin: 1rem;
+}
+
+main .main_docment a {
+    font-size: 1.6rem;
+    font-weight: 550;
+    margin: 1rem;
+    color: var(--color-general-black);
+    text-align: justify;
+}
+
+main .main_docment a:hover {
+    color: grey;
+}
+
+main .main_docment a:active {
+    color: var(--color-contraste-yellow);
+}
+
+main .main_productos {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 25rem);
+    grid-auto-rows: 30rem;
+    gap: 1rem;
+}
+
+main .main_productos img {
+    width: 17rem;
+    height: 17rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+main .main_trajeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+main .texto_tarjeta p {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+main .main_trajeta button {
+    padding: 0.5rem;
+    align-self: center;
+    border: none;
+    margin: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--color-contraste-yellow);
+}
+
+main .main_trajeta button:active {
+    background-color: #e1a429;
+    box-shadow: 0 0 2px 0 #282a2c;    
+}

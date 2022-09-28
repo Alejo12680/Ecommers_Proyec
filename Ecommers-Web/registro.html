@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="odontologia, protesis ental, sena dental, dientes">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Laboratorio ProstoDent, esta ubicado en Bucaramanga-Santander,donde suple el mercado de Protesis, Herramientas Dentales, Maquinaria Dental y Productos Dentales.">
+    <meta name="author" content="Fabio Alejandro Ramirez Saavedra">
+    <meta name="copyright" content="Propietario del copyright">
+    <title>ProstoDent</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global_2.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Link para el icono del cart -->
+    <script src="https://kit.fontawesome.com/e50b9ae23a.js" crossorigin="anonymous"></script> <!-- Link para iconos de footer social red -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_left">
+                <li class="nav_section-logo"><a href="./index.html"><img src="./img/logo-nav.png" alt="Logotipo de ProstoDent" title="Logotipo ProstoDent"></a></li>
+                <li><a href="./index.html">Inicio</a></li>
+            </ul>          
+        
+            <section class="nav_right">
+                <a href="./login.html"><button>Ingresar</button></a>
+                <a href="./registro.html"><button>Registrar</button></a>
+            </section> 
+        </nav>
+    </header>
+    <main>
+
+        <!-- Seccion del formaulario -->
+
+        <section class="main_form">
+
+            <img class="main_section-logo" src="./img/logo-nav.png" alt="Logotipo de ProstoDent" title="Logotipo ProstoDent">
+
+            <h1>Crear cuenta</h1>
+
+            <form id="loginform" method="POST" action="./Backend/create_user.php">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                
+                <label for="apellido">Apellidos: </label>
+                <input type="text" placeholder="Apellido" name="apellidos" required>
+
+                <label for="documento">Documento: </label>
+                <input type="number" placeholder="Documento" name="documento" required>
+
+                <label for="ciudad">Ciudad: </label>
+                <select name="ciudad" id="ciudad">
+                    <option value="" selected="selected">Seleccione</option>
+                </select>
+
+                <label for="telefono">Telefono: </label>
+                <input type="number" placeholder="Telefono" name="telefono" required>
+
+                <label for="email">Correo Electronico: </label>
+                <input type="email" placeholder="Correo Electronico" name="email" required>
+
+                <label for="contrasena">Contraseña: </label>
+                <input type="text" placeholder="Contraseña" name="contrasena" id="password1" required>
+
+                <p class="main_text">La contraseña debe tener al menos 6 caracteres</p>
+
+                <label for="con_contrasena">Confirme su contraseña: </label>
+                <input type="text" placeholder="Contraseña" name="con_contrasena" id="password2" required>
+
+                <p class="text_form">Al crear una cuenta, acepta las <a href="./condiciones_terminos.html">Condiciones de Uso </a> y el <a href="./politica_privacidad.html">Aviso de Privacidad </a>de ProstoDent</p>
+
+                <button onclick="enviar_formulario()" type="submit" name="submit" value="crear_cuenta">Crear Cuenta</button>
+
+            </form>
+
+            <p>Si ya tienes una cuenta <a href="./login.html">Iniciar Sesión</a></p>
+
+        </section>
+
+        <!-- finn de formulario -->
+    </main>
+    <footer>
+        <section class="footer_logo">
+            <img src="./img/logo-footer.png" alt="Logo de pie de Página" title="Logo Pie de Página">
+        </section>
+        <nav>
+            <ul class="nav_section-footer">
+
+            </ul>
+        </nav>
+        <hr>
+        <section class="footer_contact">
+            <div class="footer_contact-copyright">
+                <p>&copy; 2022 ProstoDent. All rights reserved</p>
+            </div>
+                <ul class="nav_section-contact"> <!-- clases de iconos redes sociales fontAwesome -->
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-whatsapp"></i></span>
+                </ul>
+        </section>
+    </footer>
+
+    <script src="./js/orden_ciudad.js"></script>
+    <script src="./js/validacion.js"></script>
+</body>
+</html>

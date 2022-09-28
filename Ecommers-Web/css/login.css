@@ -1,0 +1,114 @@
+:root {
+    --color-nav-blue: #3b8bb9;
+    --color-general-black: #0b0d17;
+    --color-general-white: #ffffff;
+    --color-contraste-yellow: #f5b434;
+    --color-background-form: #d9d4ca;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(./../img/img_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenido del formulario */
+
+main .main_form {
+    background-color: var(--color-nav-blue);
+    width: 30%;
+    height: 45rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 0 20rem 0;
+}
+
+main .main_section-logo {
+    width: 17rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main .main_form h1 {
+    color: var(--color-general-white);
+    font-weight: 550;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+main .main_form form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+}
+
+main .main_form input {
+    width: 70%;
+    height: 13%;
+    border-radius: 1rem;
+    background-color: var(--color-background-form);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: 1.5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+
+main .main_form button {
+    width: 28%;
+    height: 14%;
+    background-color: var(--color-contraste-yellow);
+    border: none;
+    margin: 1.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main .main_form button:active {
+    background-color: var(--color-shadow-yellow);
+    box-shadow: 0 0 5px 0 #282a2c;    
+}
+
+main .main_form a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: var(--color-general-black);
+
+}
+
+main .main_form a:hover {
+    box-shadow: 0px 1px 1px var(--color-general-black);
+}
+
+
+
+

@@ -1,0 +1,161 @@
+:root {
+    --color-nav-blue: #3b8bb9;
+    --color-general-black: #0b0d17;
+    --color-general-white: #ffffff;
+    --color-contraste-yellow: #f5b434;
+    --color-background-form: #d9d4ca;
+    --color-contraste-black: #3e3e3e;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(./../img/img_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenido del formulario */
+
+main p {
+    width: 70%;
+    font-size: 1.4rem;
+    font-weight: 550;
+    text-align: center;
+    margin: 1rem ;
+    margin-bottom: 2rem;
+}
+
+main .text_form {
+    align-self: center;
+}
+
+main .main_form .main_text {
+    font-size: 1.4rem;
+    font-weight: 540;
+    text-align: left;
+    margin: 0 0 1rem 1rem;
+    color: var(--color-contraste-yellow);
+}
+
+main .main_form {
+    background-color: var(--color-nav-blue);
+    width: 35%;
+    height: 80rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 0;
+}
+
+main .main_section-logo {
+    width: 17rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main .main_form h1 {
+    color: var(--color-general-white);
+    font-weight: 550;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+main .main_form form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 80%;
+}
+
+main .main_form input {
+    width: 100%;
+    height: 20%;
+    border-radius: 1rem;
+    background-color: var(--color-background-form);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 540;
+    padding: 0 1rem;
+}
+
+main .main_form select {
+    width: 100%;
+    height: 20%;
+    border-radius: 1rem;
+    background-color: var(--color-background-form);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: 0.5rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 540;
+    padding: 0 1rem;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+
+main .main_form option {
+    background-color: var(--color-general-white);
+}
+
+main .main_form label {
+    font-size: 1.6rem;
+    font-weight: 550;
+    margin: 0 1rem;
+}
+
+main .main_form form button {
+    width: 40%;
+    height: 20%;
+    align-self: center;
+    background-color: var(--color-contraste-yellow);
+    border: none;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+main .main_form form button:active {
+    background-color: var(--color-shadow-yellow);
+    box-shadow: 0 0 5px 0 #282a2c;    
+}
+
+main .main_form a {
+    margin: 0 0.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-contraste-black);
+
+}
+
+main .main_form a:hover {
+    box-shadow: 0px 1px 1px var(--color-general-black);
+}
