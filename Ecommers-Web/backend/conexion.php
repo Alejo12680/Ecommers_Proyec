@@ -2,9 +2,9 @@
 
 function conectar() {
     $host = "localhost";
-    $user = "alejandror_alejandror";
-    $pass = "36Mx8eS=!avz";
-    $bases = "alejandror_jhfyred7669";
+    $user = "alejandror";
+    $pass = "";
+    $bases = "postrodent";
 
     $con = mysqli_connect($host, $user, $pass);
     
